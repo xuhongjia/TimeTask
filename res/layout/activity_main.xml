@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="多功能计时器"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:background="#246699" />
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:padding="10dp">
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="45dp"
+	        android:orientation="horizontal"
+	        android:layout_marginBottom="10dp">
+
+	        <EditText
+	            android:id="@+id/text"
+	            android:layout_width="50dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="3"
+	            android:hint="输入一个整数值，表示倒计时的时间，单位秒"
+	            android:inputType="datetime"
+	            android:textSize="10sp" />
+
+	        <Button 
+	            android:id="@+id/add"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:background="@drawable/button_shape"
+	            android:layout_weight="1"
+	            android:textSize="12sp"
+	            android:text="添加倒计时"
+	            />
+	    </LinearLayout>
+	    <ListView 
+	        android:id="@+id/list_view"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        ></ListView>
+	</LinearLayout>
+</LinearLayout>
