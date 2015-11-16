@@ -46,6 +46,7 @@ public class MainActivity extends Activity implements OnClickListener {
 				Toast.makeText(this, "时间不能为空", Toast.LENGTH_SHORT).show();
 			}
 		}
+		
 		break;
 
 		default:
